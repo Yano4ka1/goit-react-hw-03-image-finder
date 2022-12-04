@@ -1,6 +1,6 @@
+import style from '../Styles.module.css';
 import PropTypes from 'prop-types';
 
-import style from '../Styles.module.css';
 
 export const Searchbar = ({onSubmit, onInput, searcValue}) => {
     return <div className={style.Searchbar}>
