@@ -2,14 +2,14 @@ import style from '../Styles.module.css';
 import PropTypes from 'prop-types';
 
 
-export const Searchbar = ({onSubmit, onInput, searcValue}) => {
+export const Searchbar = ({onSubmit, onInput, searchValue}) => {
     return <div className={style.Searchbar}>
 
         <form className={style.SearchForm} onSubmit={onSubmit}>
             <button className={style.SearchFormButton} type="submit">
-                <label className={style.SearchFormButtonLabel}></label>
+                 <label className={style.SearchFormButtonLabel}></label>
             </button>
-            <input value={searcValue} onInput={onInput} className={style.SearchFormInput} type="text" name="searchBar"/>
+            <input value={searchValue} onInput={onInput} className={style.SearchFormInput} type="text" name="searchBar"/>
         </form>
 
     </div>
@@ -19,5 +19,5 @@ export const Searchbar = ({onSubmit, onInput, searcValue}) => {
 Searchbar.propTypes = {
     onSubmit: PropTypes.func.isRequired,
     onInput: PropTypes.func.isRequired,
-    searcValue: PropTypes.string.isRequired,
+    searchValue: PropTypes.string.isRequired,
 }
