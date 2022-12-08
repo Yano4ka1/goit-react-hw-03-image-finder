@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { apiSearch } from "./api/apiSearch";
+import { apiSearch } from "./Api/apiSearch";
 import { Button } from "./Button/Button";
 import { ImageGallery } from "./ImageGallery/ImageGallery";
 import { Modal } from "./Modal/Modal";
